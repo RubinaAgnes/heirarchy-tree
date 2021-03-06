@@ -1,0 +1,16 @@
+.button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: grey;
+}
+.parent-node {
+    margin:10px 110px;
+}
+.active {
+    background: black;
+    color: white;
+}
