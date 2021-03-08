@@ -5,6 +5,7 @@ function App() {
         {
             index : 0,
             label : "Node 1",
+            isRoot: true,
             children : [
                 {
                     index : 0,
@@ -20,6 +21,7 @@ function App() {
         {
             index : 1,
             label : "Node 2",
+            isRoot: true,
             children : [
                 {
                     index : 0,

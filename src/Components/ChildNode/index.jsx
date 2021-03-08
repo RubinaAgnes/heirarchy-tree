@@ -7,7 +7,7 @@ function ChildNode(nodeData) {
     const [childActive, setChildActive] = useState(false);
     return (
         <React.Fragment>
-            <div class={`button ${childActive ? "active" : ""}`} onClick={() => setChildActive(childActive => !childActive)}>
+            <div className={`button ${data.isRoot ? "root-node" : ""} ${data.children && childActive ? "active" : ""}`} onClick={() => setChildActive(childActive => !childActive)}>
                 {data.label}
             </div>
             {data.children && childActive &&

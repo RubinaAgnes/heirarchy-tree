@@ -4,7 +4,7 @@ import "../../CSS/common.css";
 function ParentNode(nodeList) {
     const { data:nodes } = nodeList;
     return (
-        <div class="parent-node">
+        <div className="parent-node">
             {nodes.map(node => (
                 <ChildNode data={node} key={node.index}/>
             ))}  

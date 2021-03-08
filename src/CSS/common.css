@@ -6,11 +6,44 @@
     text-align: center;
     margin-bottom: 10px;
     background: grey;
+    cursor: pointer;
 }
 .parent-node {
     margin:10px 110px;
+    position: relative;   
+}
+.button::before {
+    position: relative;
+    left: -55px;
+    top: 15px;
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+
+.button::after{
+    position: relative;
+    left: -55px;
+    content: '';
+    top: -50px;
+    display: block;
+    border-left: 2px solid black;
+    height: 43px;
+}
+.button:first-child::after {
+    position: relative;
+    left: -55px;
+    content: '';
+    top: -32px;
+    display: block;
+    border-left: 2px solid black;
+    height: 25px;
 }
 .active {
     background: black;
     color: white;
+}
+.root-node::before,.root-node::after,.root-node.button:first-child::after {
+    display: none;
 }
