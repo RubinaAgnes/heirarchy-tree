@@ -4,44 +4,44 @@ function App() {
     const nodeList = [
         {
             index : 0,
-            label : "Node 1",
+            label : "Product 1",
             isRoot: true,
             children : [
                 {
                     index : 0,
-                    label : "Node 1 1",
+                    label : "Product 1 1",
                 },
                 {
                     index : 1,
-                    label : "Node 1 2",            
+                    label : "Product 1 2",            
                 },
                 
             ]      
         },
         {
             index : 1,
-            label : "Node 2",
+            label : "Product 2",
             isRoot: true,
             children : [
                 {
                     index : 0,
-                    label : "Node 2 1",
+                    label : "Product 2 1",
                 },
                 {
                     index : 1,
-                    label : "Node 2 2",
+                    label : "Product 2 2",
                     children : [
                         {
                             index : 0,
-                            label : "Node 2 2 1",
+                            label : "Product 2 2 1",
                             children : [
                                 {
                                     index : 0,
-                                    label : "Node 2 2 1 0",
+                                    label : "Product 2 2 1 0",
                                 },
                                 {
                                     index : 1,
-                                    label : "Node 2 2 1 1",                            
+                                    label : "Product 2 2 1 1",                            
                                 },
                                 
                             ]      

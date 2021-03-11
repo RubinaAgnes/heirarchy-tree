@@ -1,5 +1,5 @@
 .button {
-    width: 100px;
+    width: 120px;
     height: 30px;
     border: 1px solid black;
     border-radius: 4px;
@@ -19,7 +19,7 @@
     content: '';
     display: block;
     border-bottom: 2px solid black;
-    width: 50%;
+    width: 45%;
 }
 
 .button::after{
@@ -46,4 +46,119 @@
 }
 .root-node::before,.root-node::after,.root-node.button:first-child::after {
     display: none;
+}
+.popup-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+.popup-content {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    margin: auto;
+    background: white;
+    padding: 15px;
+}
+.question-mark {
+    float: right;
+    margin-right: 2px;
+    position: relative;
+    bottom: 10px;
+    font-size: 10px;
+}
+.close-button {
+    float: right;
+    margin-right:7px;
+    cursor: pointer;
+}
+.label {
+    margin: 10px 0px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    float: right;
+    top: 7px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 6px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    transform: translateX(11px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.popup-content-header {
+    font-weight: bold;
+}
+.popup-subheader {
+    font-size: 10px;
+    display: inline-block;
+}
+.popup-subheader-bold {
+    font-size: 12px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+table th,table tr {
+    font-size: 12px;
+    width: 70px;
+    text-align: left;
 }
